@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #424242;
+  background: #eeeeee;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  width: 900px;
+}
+
+.stockApp {
+  margin: 5em 0;
+  padding: 1em;
+  background: #fff;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.stockForm {
+  flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  margin: 0.5em;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.stockForm input[type=text] {
+  color: #424242;
+  flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  padding: 0.15em;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+  border-color: rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.stockForm input[type=submit] {
+  color: #424242;
+  cursor: pointer;
+  flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  font-size: 1.25em;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  padding: 0.5em;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: none;
+  outline: none;
+}
+
+.stockList {
+  flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  min-width: 60%;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.stockBox {
+  flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  margin: 0.5em;
+  width: 5em;
+  height: 5em;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.stockBox > p {
+  cursor: pointer;
+  margin: 0;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+.stockBox > span {
+  cursor: pointer;
+  top: 0.1em;
+  left: 4em;
+  position: relative;
+}
+
+.stockGraph {
+  flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  padding: 1.5em 0.5em;
+}
+
+#lineGraph {
+  position: absolute;
+}
+
+.buttonList {
+  padding: 0 0.5em;
+  flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+}
+
+.stockButton {
+  margin-right: 0.5em;
+  width: 3em;
+  height: 3em;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.stockTweets {
+  width: 100%;
+  padding: 1.5em;
+  flex: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.stockTweets > h3 {
+  margin: 0;
+}
+
+.tweetList {
+  padding: 1em 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.tweetList > div {
+  padding: 0.2em 0;
+  line-height: 1.5;
+}
+
+.tweetList > :first-child {
+  font-style: italic;
+}
